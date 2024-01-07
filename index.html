@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    >
+    <title>Friends app</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<section class="friends-list">
+    <div class="friends-list__navigation">
+        <p class="friends-list__title">Filters:</p>
+        <div class="friends-list__filter-title">By name</div>
+        <div class="friends-list__filter">
+            <button
+              class="friends-list__filter-button friends-list__filter-asc"
+              type="button"
+              data-name="name_asc"
+            >
+            </button>
+            <button
+              class="friends-list__filter-button friends-list__filter-desc"
+              type="button"
+              data-name="name_desc"
+            >
+            </button>
+        </div>
+        <div class="friends-list__filter-title">By age</div>
+        <div class="friends-list__filter">
+            <button
+              class="friends-list__filter-button friends-list__filter-asc"
+              type="button"
+              data-name="age_asc"
+            >
+            </button>
+            <button
+              class="friends-list__filter-button friends-list__filter-desc"
+              type="button"
+              data-name="age_desc"
+            >
+            </button>
+        </div>
+        <div class="friends-list__filter-title">By sex</div>
+        <div class="friends-list__filter">
+            <button
+              class="friends-list__filter-button"
+              type="button"
+              data-name="male"
+            >Male
+            </button>
+            <button
+              class="friends-list__filter-button"
+              type="button"
+              data-name="female"
+            >Female
+            </button>
+        </div>
+        <div class="friends-list__search-wrap">
+            <div class="friends-list__search">
+                <input
+                  placeholder="Search..."
+                  id="search"
+                  type="search"
+                  data-name="search_input"
+                  class="friends-list__search-input"
+                >
+            </div>
+            <button data-name="search_input-button" class="friends-list__search-button">Search</button>
+        </div>
+        <div class="friends-list__filter friends-list__filter--clear">
+            <button
+              class="friends-list__filter-button friends-list__filter-button--clear"
+              type="button"
+              data-name="clear"
+            >Clear filters
+            </button>
+        </div>
+    </div>
+    <div class="friends-content"></div>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
